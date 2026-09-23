@@ -1,0 +1,13 @@
+/* Shared StudySide styles. Tailwind handles most styling. */
+:root{--navy:#17324d;--teal:#087f8c;--cream:#f7faf9}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",sans-serif;background:var(--cream);color:#17202a}
+h1,h2,h3,h4,.display-font{font-family:"DM Sans",sans-serif}
+:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
+.skip-link{position:absolute;left:1rem;top:-5rem;z-index:100;background:#fff;color:#17324d;padding:.75rem 1rem;border-radius:.5rem;font-weight:700}
+.skip-link:focus{top:1rem}
+.image-placeholder{min-height:210px;display:grid;place-items:center;border:2px dashed #72808d;background:#e9f0f1;border-radius:1rem;color:#34495e;text-align:center}
+.toast{position:fixed;right:1rem;bottom:1rem;z-index:90;max-width:23rem}
+.progress-track{height:.55rem;background:#dce5e7;border-radius:999px;overflow:hidden}
+.progress-value{height:100%;background:var(--teal);border-radius:999px;transition:width .25s ease}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
